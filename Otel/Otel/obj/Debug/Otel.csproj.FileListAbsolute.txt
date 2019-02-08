@@ -1,0 +1,17 @@
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\БД Отель\Otel\Otel\bin\Debug\Otel.exe.config
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\БД Отель\Otel\Otel\obj\Debug\Otel.csprojResolveAssemblyReference.cache
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\БД Отель\Otel\Otel\obj\Debug\Otel.Form1.resources
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\БД Отель\Otel\Otel\obj\Debug\Otel.Properties.Resources.resources
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\БД Отель\Otel\Otel\obj\Debug\Otel.csproj.GenerateResource.Cache
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\obj\Debug\Otel.Form1.resources
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\obj\Debug\Otel.Properties.Resources.resources
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\obj\Debug\Otel.csproj.GenerateResource.cache
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\bin\Debug\Otel.exe.config
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\obj\Debug\Otel.csprojResolveAssemblyReference.cache
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\bin\Debug\Otel.exe
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\bin\Debug\Otel.pdb
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\bin\Debug\MySql.Data.dll
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\bin\Debug\Google.Protobuf.dll
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\bin\Debug\MySql.Data.xml
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\obj\Debug\Otel.exe
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\Otel\obj\Debug\Otel.pdb

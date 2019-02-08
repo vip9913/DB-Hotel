@@ -1,0 +1,50 @@
+		БД Отель-гостиница
+
+Client  = FIO   Birhday Address Data_open  Date_close   Klass  Room
+		  
+	*	id 			int
+		client      varchar
+		email		varchar
+		phone		varchar
+		address		varchar
+		info		text
+
+Book     - пока не знаю что с этой категорией делать? (заявки) книга резервирования заказов
+		
+	*	id          int		         
+		client_id   int
+		book_date  	datetime			//дата записи
+	+	from_day	date
+	+	till_day   	date                //даты заезда и выезда		  
+		adults      int                 //взрослые
+		childs      int                 //маленькие
+		status      varchar            //статус заказа
+		info        text 
+
+Room    =  Number  Klass Persons  Status
+		
+	*	id  		int			//это не номер комнаты
+		room        varchar		//номер комнаты
+		beds        int         //сколько спальных мест
+		floor       varchar     //этаж
+		step        int         //совпадает с id  при добавлении для перенумерации комнат
+		info		text
+
+Map     -  Client Polysi Status   распределение комнат по заявкам
+
+	*	room_id
+	*   book_id
+	*   calendar_day                    на какой день комната занята		
+		status (забронирована, занята, свободна) цветовая кодировка
+		adults  //сколько взрослых
+		childs  //сколько детей
+		info
+
+Calendar  TimeRezerv  Pozdravok
+
+	*	day     date		
+		wend    bool     //выходной или нет
+		holiday bool     //праздник или нет   bool tinyint
+		data    date
+		info	text
+
