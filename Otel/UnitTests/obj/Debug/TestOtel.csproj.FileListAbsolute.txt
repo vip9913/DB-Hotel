@@ -1,0 +1,10 @@
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\UnitTests\bin\Debug\UnitTests.dll
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\UnitTests\bin\Debug\UnitTests.pdb
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\UnitTests\bin\Debug\Otel.exe
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\UnitTests\bin\Debug\MySql.Data.dll
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\UnitTests\bin\Debug\Google.Protobuf.dll
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\UnitTests\bin\Debug\Otel.pdb
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\UnitTests\bin\Debug\MySql.Data.xml
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\UnitTests\obj\Debug\UnitTests.dll
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\UnitTests\obj\Debug\UnitTests.pdb
+C:\Users\vip\Desktop\My_Programming\!Student_Videosharp\DB Hotel California\Otel\UnitTests\obj\Debug\TestOtel.csprojResolveAssemblyReference.cache

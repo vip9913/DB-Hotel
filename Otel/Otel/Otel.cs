@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Otel
 {
-    public partial class Form1 : Form
+    public partial class Otel : Form
     {
         MySQL sql;
 
-        public Form1()
+        public Otel()
         {
             InitializeComponent();
             timer1.Enabled = true;
@@ -24,13 +18,15 @@ namespace Otel
         private void button1_Click(object sender, EventArgs e)
         {
             DataTable client=sql.Select("SELECT * FROM Client");
-           // MessageBox.Show(sql.Scalar("SELECT NOW()"));
-            MessageBox.Show(client.Rows[0][1].ToString());
+            // MessageBox.Show(sql.Scalar("SELECT NOW()"));
+            dataGridView1.DataSource=client;
+           // MessageBox.Show(client.Rows[0][1].ToString());
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            sql.Insert("INSERT INTO Client VALUES(0, 'Тестор', 'test6@mail.ru', '06', 'addr6', 'программный');");
+            do sql.Insert("INSERT INTO Client VALUES(3, 'Тестор', 'test6@mail.ru', '06', 'addr6', 'программный');");
+            while (sql.SqlError());
         }
 
         private void timer1_Tick(object sender, EventArgs e)

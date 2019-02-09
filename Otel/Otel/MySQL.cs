@@ -1,18 +1,18 @@
 ﻿using System;
 using MySql.Data.MySqlClient;
-using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace Otel
 {
-    class MySQL
+    public class MySQL  //для демонстрации работы теста
     {
         string host;
         string user;
         string pass;
         string database;
         string connectionString;
-        string error;
+        string error="";
         string query;
         MySqlConnection myConn;
         MySqlCommand cmd;
@@ -32,6 +32,7 @@ namespace Otel
 
         protected bool Open()
         {
+            error = "";
             try
             {
                 myConn = new MySqlConnection(connectionString);
@@ -130,6 +131,28 @@ namespace Otel
         public string addslashes(string text)
         {
             return text.Replace("'", "\\");
+        }
+
+        public bool SqlError()
+        {
+            if (error == "") return false;
+            DialogResult dr=
+            MessageBox.Show(error+"\n"+
+                "Запрос: \n"+query+
+                "\nAbort - закрыть программу"+
+                "\nRetry - повторить запрос"+
+                "\nIgnore- пропустить ошибку",
+                "Ошибка БД"+user+"@"+host,
+                MessageBoxButtons.AbortRetryIgnore);
+            if (dr == DialogResult.Abort)
+            {
+                //Environment.Exit(0);
+                Environment.FailFast("Error MySQL");
+                //Application.Exit();
+                return true;
+            }
+            if (dr == DialogResult.Abort) return true;
+            return false;
         }
     }
 }
