@@ -9,7 +9,7 @@ namespace UnitTests
         [TestMethod]
         public void Пример()
         {
-            Assert.AreEqual(2, 2);
+           // Assert.Equals(1, 1);
         }
     }
 }

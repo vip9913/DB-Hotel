@@ -13,6 +13,13 @@ namespace Otel
             InitializeComponent();
             timer1.Enabled = true;
             sql = new MySQL("localhost", "root", "7f651m", "hotel");
+
+            Model.Client mClient = new Model.Client(sql);
+            mClient.SetInfo("test Insert");
+            mClient.SetClient("Маша");
+            mClient.SetAddress("Луна");
+            mClient.InsertClient();
+            MessageBox.Show(mClient.id.ToString());          
         }
 
         private void button1_Click(object sender, EventArgs e)
