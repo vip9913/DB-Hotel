@@ -47,7 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Calendar.cs" />
     <Compile Include="Model\Client.cs" />
+    <Compile Include="Model\day.cs" />
+    <Compile Include="Model\Room.cs" />
     <Compile Include="Otel.cs">
       <SubType>Form</SubType>
     </Compile>
