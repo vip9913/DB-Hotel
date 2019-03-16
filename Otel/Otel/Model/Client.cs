@@ -130,7 +130,7 @@ namespace Otel.Model
         /// <returns>True-успешно, False - не так успешно как хотелось бы</returns>
         public bool UpdateClient(long client_id)
         {
-            if (SelectClient(client_id))
+            if (true)
             {
                 int result = 0;
                 string query = "UPDATE Client " +

@@ -58,11 +58,13 @@ namespace Otel
 
             //mClient.SelectClient(long.Parse(dataGridView1[0, e.RowIndex].Value.ToString()));           
 
-            mClient.SetPhone(rnd.Next(10000, 99999).ToString());
+            mClient.SelectClient(id);
+            string new_phone = rnd.Next(10000, 99999).ToString();
+            mClient.SetPhone(new_phone);
             mClient.UpdateClient(id);
+            dataGridView1.Refresh();         
 
             //MessageBox.Show(mClient.client);
-
             //MessageBox.Show(long.Parse(dataGridView1[0, e.RowIndex].Value.ToString()).ToString());
 
         }

@@ -1,12 +1,14 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Otel;	
+using Otel;
 
 namespace TestOtel
 {
     [TestClass]
     public class TestMySQL
-    {
+    {        
+        MySQL sql;              
+
         [TestMethod]
         public void TestMySQLConnection()
         {
