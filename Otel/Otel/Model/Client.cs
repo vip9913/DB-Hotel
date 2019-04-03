@@ -128,7 +128,7 @@ namespace Otel.Model
         /// </summary>
         /// <param name="client_id">№ клиента</param>
         /// <returns>True-успешно, False - не так успешно как хотелось бы</returns>
-        public bool UpdateClient(long client_id)
+        public bool UpdateClient()
         {
             if (true)
             {
@@ -139,7 +139,7 @@ namespace Otel.Model
                 "     phone   = '" + sql.addslashes(this.phone) + "'," +
                 "     address = '" + sql.addslashes(this.address) + "'," +
                 "     info    = '" + sql.addslashes(this.client) + "' " +
-                " WHERE id    = '" + sql.addslashes(client_id.ToString()) + "'";
+                " WHERE id    = '" + sql.addslashes(this.id.ToString()) + "'";
                 do result = sql.Update(query);
                 while (sql.SqlError());
                 return (result == 0) ? false : true;

@@ -61,7 +61,7 @@ namespace Otel
             mClient.SelectClient(id);
             string new_phone = rnd.Next(10000, 99999).ToString();
             mClient.SetPhone(new_phone);
-            mClient.UpdateClient(id);
+            mClient.UpdateClient();
             dataGridView1.Refresh();         
 
             //MessageBox.Show(mClient.client);
