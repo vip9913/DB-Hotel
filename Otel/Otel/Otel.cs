@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using Otel.Model; //подключаем для доступа к Book
 
 namespace Otel
 {
@@ -67,6 +68,13 @@ namespace Otel
             //MessageBox.Show(mClient.client);
             //MessageBox.Show(long.Parse(dataGridView1[0, e.RowIndex].Value.ToString()).ToString());
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Book mBook = new Book(sql);
+            dataGridView1.DataSource = mBook.SelectBooks(textBox1.Text);
+           // dataGridView1.Columns[0].HeaderText = "№";
         }
     }
 }

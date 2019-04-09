@@ -190,7 +190,11 @@ Calendar  TimeRezerv  Pozdravok
 	ModelRoom.ShiftRoomDn(int room_id)			
 *	перемещение комнаты по списку вниз-вверх (сортировка)
 
-	ModelBook.InsertBook()			
+	status
+	(waiting, confirm, deleted)
+
+
+	ModelBook.InsertBook()
 	создание новой регистрации
 	INSERT INTO book 
 	SET client_id=1,
@@ -202,6 +206,7 @@ Calendar  TimeRezerv  Pozdravok
 	status='wait',
 	info='Not specified';
 
+
 	ModelBook.UpdateStatus(int book_id, string status)			
 	изменение статуса регистрации
 			отмена
@@ -212,7 +217,13 @@ Calendar  TimeRezerv  Pozdravok
 		SET status='confirm'
 		WHERE id=1;	
 
-	ModelBook.UpdateBook(int book_id)					
+	ModelBook.SelectBook(long book_id)					//выбор заданной резервации
+	SELECT client_id, book_date, from_day, till_day, adults,childs, status,
+	b.info
+	FROM book 
+	WHERE id=2;
+
+	ModelBook.UpdateBook()					
 	редактирование регистрации	без дней	
 	UPDATE book 
 	SET adults=1,
@@ -235,6 +246,7 @@ Calendar  TimeRezerv  Pozdravok
 	b.info
 	FROM book b LEFT JOIN Client c
 	ON b.client_id=c.id
+	ORDER BY book_date
 	WHERE b.id=1\G
 
 	ModelBook.SelectBooks(string find)			

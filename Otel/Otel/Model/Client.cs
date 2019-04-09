@@ -59,7 +59,7 @@ namespace Otel.Model
         /// <summary>
         /// Регистрация нового клиента
         /// </summary>
-        public void InsertClient()
+        public bool InsertClient()
         {
             string query = "INSERT INTO Client (client, email, phone, address, info) " +
                  "VALUES ('" + sql.addslashes(client) +
@@ -69,6 +69,7 @@ namespace Otel.Model
                      "', '" + sql.addslashes(info) + "')";
             do this.id = this.sql.Insert(query);
             while (this.sql.SqlError());
+            return (this.id > 0);
         }
 
         /// <summary>
