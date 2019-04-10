@@ -55,8 +55,8 @@ namespace Otel.Model
             "INSERT INTO Book " +
             "SET client_id ='" + client_id + "', " +
             "book_date = now(), "+    
-            "    from_day = '" + from_day.ToString("yyyy-MM-dd") + "', " +
-            "till_day = '" + till_day.ToString("yyyy - MM - dd") + "', " +
+            "    from_day = '" + sql.DateToString(from_day) + "', " +
+            "till_day = '" + sql.DateToString(till_day) + "', " +
             "adults = '" + this.adults + "' ," +
             "childs = '" + this.childs + "', " +
             "status = 'wait', "+    
@@ -172,7 +172,7 @@ namespace Otel.Model
             int result;
             do result = sql.Update(
               "UPDATE Book " +
-            " SET from_day  = '" + from_day.ToString("yyyy-MM-dd") + "' " +
+            " SET from_day  = '" + sql.DateToString(from_day) + "' " +
             " WHERE id    = '" + sql.addslashes(this.id.ToString()) + "' LIMIT 1");
             while (sql.SqlError());
             return (result==1);
@@ -190,7 +190,7 @@ namespace Otel.Model
             int result;
             do result = sql.Update(
               "UPDATE Book " +
-            " SET from_day  = '" + till_day.ToString("yyyy-MM-dd") + "' " +
+            " SET from_day  = '" + sql.DateToString(till_day) + "' " +
             " WHERE id    = '" + sql.addslashes(this.id.ToString()) + "' LIMIT 1");
             while (sql.SqlError());
             return (result == 1);

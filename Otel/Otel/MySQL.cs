@@ -81,6 +81,11 @@ namespace Otel
             return result;
         }
 
+        internal string DateToString(DateTime date)
+        {
+            return date.ToString("yyyy-MM-dd");
+        }
+
         public DataTable Select(string query)
         {
             DataTable table = null;

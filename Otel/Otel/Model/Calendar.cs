@@ -26,7 +26,7 @@ namespace Otel.Model
                 if (day.DayOfWeek == DayOfWeek.Friday || day.DayOfWeek == DayOfWeek.Saturday || day.DayOfWeek == DayOfWeek.Sunday) wend = 1;
                 string query=
                                 "INSERT IGNORE INTO Calendar"+
-                                " SET day = '"+day.ToString("yyyy-MM-dd")+"',"+
+                                " SET day = '"+sql.DateToString(day)+"',"+
                                 "     wend = "+wend+","+
                                 "     holiday = 0";
                 do this.sql.Insert(query);
@@ -57,7 +57,7 @@ namespace Otel.Model
         {
             string query = "UPDATE Calendar " +
           " SET holiday = " + (holiday? "1" : "0")+
-          " WHERE day = '" + day.ToString("yyyy-MM-dd") + "'" +
+          " WHERE day = '" + sql.DateToString(day)+ "'" +
           " LIMIT 1";
             do this.sql.Update(query);
             while (sql.SqlError());
